@@ -1,0 +1,31 @@
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+[[mods]] #mandatory
+# The modid of the mod
+modId="sophisticatedrei" #mandatory
+version="${file.jarVersion}" #mandatory
+ # A display name for the mod
+displayName="Sophisticated REI" #mandatory
+# A text field displayed in the mod UI
+authors="CrossVas" #optional
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Compat layer between Sophisticated Backpacks and Roughly Enough Items
+'''
+# Here's another dependency
+[[dependencies.sophisticatedrei]]
+    modId="roughlyenoughitems"
+    mandatory=true
+    versionRange="[9.1.663,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.sophisticatedrei]]
+modId="sophisticatedbackpacks"
+mandatory=true
+versionRange="[1.19.2-3.20.2.1035,)"
+ordering="AFTER"
+side="BOTH"
