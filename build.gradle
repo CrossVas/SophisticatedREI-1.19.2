@@ -120,6 +120,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:sophisticated-core-618298:5194752")
     implementation fg.deobf("curse.maven:sophisticated-backpacks-422301:5194759")
+    implementation fg.deobf("curse.maven:sophisticated-storage-619320:5194750")
 
     implementation fg.deobf("curse.maven:jei-238222:4712866")
 //     runtimeOnly fg.deobf("curse.maven:mekanism-268560:4644795")

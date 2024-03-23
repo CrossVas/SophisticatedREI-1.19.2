@@ -24,8 +24,14 @@ Compat layer between Sophisticated Backpacks and Roughly Enough Items
     side="BOTH"
 
 [[dependencies.sophisticatedrei]]
-modId="sophisticatedbackpacks"
-mandatory=true
-versionRange="[1.19.2-3.20.2.1035,)"
-ordering="AFTER"
-side="BOTH"
+    modId="sophisticatedbackpacks"
+    mandatory=false
+    versionRange="[1.19.2-3.20.2.1035,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.sophisticatedrei]]
+    modId="sophisticatedstorage"
+    mandatory=false
+    versionRange="[1.19.2-0.9.7.765,)"
+    ordering="AFTER"
+    side="BOTH"
