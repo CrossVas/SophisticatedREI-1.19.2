@@ -1,6 +1,5 @@
 package dev.crossvas.sophisticatedrei;
 
-import dev.crossvas.sophisticatedrei.handlers.CraftingRecipeTransferHandler;
 import dev.crossvas.sophisticatedrei.handlers.SettingsScreenDraggableHandler;
 import dev.crossvas.sophisticatedrei.handlers.StorageScreenDraggableHandler;
 import dev.crossvas.sophisticatedrei.mods.backpacks.REIBackpacksClientPlugin;
@@ -17,7 +16,7 @@ public class SophisticatedREIClientPlugin implements REIClientPlugin {
 
     @Override
     public void registerTransferHandlers(TransferHandlerRegistry registry) {
-        registry.register(new CraftingRecipeTransferHandler());
+        // TODO: add crafting transfer handler
     }
 
     @Override
