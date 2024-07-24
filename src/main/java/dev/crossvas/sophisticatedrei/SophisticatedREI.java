@@ -1,5 +1,6 @@
 package dev.crossvas.sophisticatedrei;
 
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -9,6 +10,9 @@ import net.p3pp3rf1y.sophisticatedcore.network.PacketHandler;
 public class SophisticatedREI {
 
     public static final String ID = "sophisticatedrei";
+
+    public static final boolean BACKPACKS = ModList.get().isLoaded("sophisticatedbackpacks");
+    public static final boolean STORAGE = ModList.get().isLoaded("sophisticatedstorage");
 
     public SophisticatedREI() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
